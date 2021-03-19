@@ -47,8 +47,6 @@ class GroceryForm extends Component {
         <div className="col">
         <input
           className="form-control"
-        />
-        <input
           name="price"
           value={price}
           onChange={this.handleChange}
@@ -56,9 +54,6 @@ class GroceryForm extends Component {
           placeholder="Price"
         /></div></div>
         <button className="btn" type="submit">Submit</button>
-
-        />
-
       </form> 
     )
   }
