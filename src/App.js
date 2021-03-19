@@ -48,7 +48,9 @@ render() {
     <GroceryForm addItem={this.addItem} /><hr />
     <h3 className="text-center">Here is your current list:</h3>
     <GroceryList groceries={groceries} updateComplete={this.updateComplete} />
-    </div></>
+    </div>
+    
+    </>
   )
 }
 }
