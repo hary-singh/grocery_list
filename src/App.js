@@ -42,9 +42,11 @@ class App extends Component{
 render() {
   const { groceries } = this.state
   return (
-    <><div className="bg">
-    <h1 className="text-center display-2"> Grocery List: </h1><hr />
-    <GroceryForm addItem={this.addItem} />
+    <><div className="text-center">
+    <h1 className="text-center display-2"> Grocery List </h1><hr />
+    <h3 className="text-center">Add a new item to the list:</h3>
+    <GroceryForm addItem={this.addItem} /><hr />
+    <h3 className="text-center">Here is your current list:</h3>
     <GroceryList groceries={groceries} updateComplete={this.updateComplete} />
     </div></>
   )

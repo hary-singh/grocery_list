@@ -6,7 +6,8 @@ class GroceryItem extends Component{
       const { id, name, price, complete, updateComplete } = this.props
       const styles = {
         complete: {
-          textDecoration: 'line-through'
+          textDecoration: 'line-through',
+          color: 'grey'
         }
       }
       return(
