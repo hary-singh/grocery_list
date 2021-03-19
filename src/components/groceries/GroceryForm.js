@@ -31,13 +31,22 @@ class GroceryForm extends Component {
   render() {
     const { name, price } = this.state
     return (
+
+     
       <form onSubmit={this.handleSubmit}>
+        <div className="row-g3">
+        <div className="col">
         <input
+          className="form-control"
           name="name"
           value={name}
           onChange={this.handleChange}
           required
           placeholder="Name"
+        /></div>
+        <div className="col">
+        <input
+          className="form-control"
         />
         <input
           name="price"
@@ -45,8 +54,11 @@ class GroceryForm extends Component {
           onChange={this.handleChange}
           required
           placeholder="Price"
+        /></div></div>
+        <button className="btn" type="submit">Submit</button>
+
         />
-        <button type="submit">Submit</button>
+
       </form> 
     )
   }
