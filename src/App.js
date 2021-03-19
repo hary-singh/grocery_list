@@ -10,6 +10,8 @@ class App extends Component{
       ]
   }
 
+  getId = () => {}
+
   updateComplete = ( id ) => {
     const { groceries } = this.state
     this.setState({
