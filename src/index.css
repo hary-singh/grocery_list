@@ -1,13 +1,48 @@
 body {
+  background-color: #28527a;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
+}
+h4{
+  color: #cfc08f;
+}
+h1{
+  color: #fdfdfd;
+}
+
+.btn {
+  background: #3685ba;
+  background-image: -webkit-linear-gradient(top, #3685ba, #83aec9);
+  background-image: -moz-linear-gradient(top, #3685ba, #83aec9);
+  background-image: -ms-linear-gradient(top, #3685ba, #83aec9);
+  background-image: -o-linear-gradient(top, #3685ba, #83aec9);
+  background-image: linear-gradient(to bottom, #3685ba, #83aec9);
+  -webkit-border-radius: 26;
+  -moz-border-radius: 26;
+  border-radius: 26px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #5ba6d4;
+  background-image: -webkit-linear-gradient(top, #5ba6d4, #6ea8cf);
+  background-image: -moz-linear-gradient(top, #5ba6d4, #6ea8cf);
+  background-image: -ms-linear-gradient(top, #5ba6d4, #6ea8cf);
+  background-image: -o-linear-gradient(top, #5ba6d4, #6ea8cf);
+  background-image: linear-gradient(to bottom, #5ba6d4, #6ea8cf);
+  text-decoration: none;
 }
