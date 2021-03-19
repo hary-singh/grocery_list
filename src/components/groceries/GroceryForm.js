@@ -19,11 +19,11 @@ class GroceryForm extends Component {
     e.preventDefault()
     if (this.props.id) {
       
-      const { updateGroceryItem, toggleEdit } = this.props
-      updateGroceryItem(this.state)
+      const { updateItem, toggleEdit } = this.props
+      updateItem(this.state)
       toggleEdit()
     } else {
-      this.props.addGroceryItem(this.state)
+      this.props.addItem(this.state)
     }
     this.setState({ name: "", price: "" })
   }
