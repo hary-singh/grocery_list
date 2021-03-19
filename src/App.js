@@ -29,7 +29,7 @@ render() {
   const { groceries } = this.state
   return (
     <>
-    <h1> Grocery List: </h1>
+    <h1 className="text-center display-2"> Grocery List: </h1><hr />
     <GroceryList groceries={groceries} updateComplete={this.updateComplete} />
     </>
   )

@@ -11,7 +11,7 @@ class GroceryItem extends Component{
       }
       return(
         <div>
-          <h4
+          <h4 className="fst-italic"
             style={ complete ? {...styles.complete} : null }
             onClick={() => updateComplete(id)}
           >
