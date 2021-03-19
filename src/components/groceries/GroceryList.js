@@ -1,10 +1,10 @@
 import GroceryItem from './GroceryItem';
 
-const GroceryList = ({ groceries }) => {
+const GroceryList = ({ groceries , updateComplete }) => {
   return(
     <>
       {  groceries.map( g => (
-          <GroceryItem {...g} />
+          <GroceryItem key={g.id} {...g} updateComplete={updateComplete}/>
         ))
       }
     </>

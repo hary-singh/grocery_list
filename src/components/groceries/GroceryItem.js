@@ -3,11 +3,19 @@ import { Component } from 'react';
 class GroceryItem extends Component{
 
   render(){
-      const { id, name, price } = this.props
+      const { id, name, price, complete, updateComplete } = this.props
+      const styles = {
+        complete: {
+          textDecoration: 'line-through'
+        }
+      }
       return(
         <div>
-          <h2>{name}</h2>
-          <h3>{price}</h3>
+          <h4
+            style={ complete ? {...styles.complete} : null }
+            onClick={() => updateComplete(id)}
+          >
+            {name} -- ${price}</h4>
         </div>
       )
   }

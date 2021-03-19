@@ -4,18 +4,33 @@ import GroceryItem from './components/groceries/GroceryItem'
 class App extends Component{
   state = {
       groceries: [
-        { id: 1, name: "Apples", price: 10 },
-        { id: 2, name: "Oranges", price: 5 },
-        { id: 3, name: "Turnips", price: 15 }
+        { id: 1, name: "Apples", price: 10 , complete: false},
+        { id: 2, name: "Oranges", price: 5 , complete: false},
+        { id: 3, name: "Turnips", price: 15 , complete: false}
       ]
   }
 
+  updateComplete = ( id ) => {
+    const { groceries } = this.state
+    this.setState({
+      groceries: groceries.map( g => {
+        if ( g.id === id){
+          return {
+            ...g,
+            complete: !g.complete
+          }
+        }
+        return g
+      })
+    })
+
+  }
 render() {
   const { groceries } = this.state
   return (
     <>
-    <h1> Welcome to our Grocery Store</h1>
-    <GroceryList groceries={groceries} />
+    <h1> Grocery List: </h1>
+    <GroceryList groceries={groceries} updateComplete={this.updateComplete} />
     </>
   )
 }
