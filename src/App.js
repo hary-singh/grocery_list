@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import GroceryList from './components/groceries/GroceryList'
-import GroceryItem from './components/groceries/GroceryItem'
 import GroceryForm from './components/groceries/GroceryForm'
 class App extends Component{
   state = {
