@@ -3,11 +3,7 @@ import GroceryList from './components/groceries/GroceryList'
 import GroceryForm from './components/groceries/GroceryForm'
 class App extends Component{
   state = {
-      groceries: [
-        { id: 1, name: "Apples", price: 10 , complete: false},
-        { id: 2, name: "Oranges", price: 5 , complete: false},
-        { id: 3, name: "Turnips", price: 15 , complete: false}
-      ]
+      groceries: []
   }
 
   getId = () => {
